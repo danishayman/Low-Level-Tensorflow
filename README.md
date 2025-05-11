@@ -65,15 +65,46 @@ The dataset contains binary classification data with 5 input features. Distribut
 
 ---
 
-## 🚀 Usage
+## 🚀 Getting Started
 
-1. Install dependencies:
+### Prerequisites
+
+- Python 3.x
+- Git
+
+### Clone the Repository
+
 ```bash
-pip install tensorflow pandas sklearn matplotlib
+git clone https://github.com/danishayman/Low-Level-Tensorflow.git
+cd low-level-tensorflow
 ```
 
-2. Load and preprocess data:
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+The required packages are:
+- TensorFlow 2.x
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- jupyter
+
+---
+
+## 🚀 Usage
+
+1. Start Jupyter Notebook:
+```bash
+jupyter notebook
+```
+
+2. Open the `Low_Level_TF.ipynb` notebook:
 ```python
+# Load and preprocess data
 dataset = pd.read_csv('classification_dataset.csv')
 ```
 
@@ -87,8 +118,4 @@ train_losses, valid_losses = fit(model, optimizer, train_data, valid_data,
 
 ## 📦 Requirements
 
-- Python 3.x
-- TensorFlow 2.x
-- pandas
-- scikit-learn
-- matplotlib
+See `requirements.txt` for a complete list of dependencies.
